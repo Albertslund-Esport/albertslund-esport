@@ -8,6 +8,7 @@ body {
   color: white;
 }
 
+/* HEADER */
 header {
   background: linear-gradient(90deg, #111827 0%, #0f172a 100%);
   padding: 30px 20px;
@@ -26,6 +27,7 @@ header p {
   font-size: 18px;
 }
 
+/* LOGO */
 .logo {
   width: 120px;
   height: auto;
@@ -34,12 +36,10 @@ header p {
   filter: drop-shadow(0 0 12px rgba(255, 200, 0, 0.25));
 }
 
+/* NAVBAR */
 .navbar {
   background: rgba(31, 41, 55, 0.95);
   padding: 14px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
   border-top: 2px solid #22c55e;
   position: sticky;
   top: 0;
@@ -91,12 +91,14 @@ header p {
   width: 100% !important;
 }
 
+/* MAIN */
 main {
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
+/* HERO */
 .hero {
   background: linear-gradient(135deg, #111827 0%, #1e293b 100%);
   padding: 60px 30px;
@@ -120,13 +122,13 @@ main {
   margin: 0 auto 20px;
 }
 
+/* CARD */
 .card {
   background: #111827;
   padding: 25px;
   border-radius: 16px;
   margin-bottom: 20px;
   box-shadow: 0 0 18px rgba(255, 255, 255, 0.05);
-  text-align: left;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -140,6 +142,7 @@ main {
   margin-top: 0;
 }
 
+/* BUTTON */
 .button {
   display: inline-block;
   margin-top: 20px;
@@ -151,15 +154,15 @@ main {
   font-weight: bold;
   font-size: 16px;
   box-shadow: 0 0 18px rgba(34, 197, 94, 0.25);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .button:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 24px rgba(34, 197, 94, 0.45);
-  opacity: 1;
 }
 
+/* DISCORD BUTTON */
 .link-button {
   display: inline-block;
   margin-top: 12px;
@@ -169,7 +172,7 @@ main {
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .link-button:hover {
@@ -177,10 +180,10 @@ main {
   opacity: 0.92;
 }
 
+/* FORM */
 form {
   max-width: 700px;
   margin: 0 auto;
-  text-align: left;
 }
 
 label {
@@ -193,13 +196,10 @@ label {
 input,
 select,
 textarea {
-  display: block;
   width: 100%;
   padding: 12px;
-  border: none;
   border-radius: 10px;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  border: none;
   margin-bottom: 10px;
   background: #f8fafc;
   color: #111827;
@@ -218,9 +218,9 @@ button {
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
-  font-size: 16px;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 25px;
@@ -229,6 +229,7 @@ footer {
   color: #cbd5e1;
 }
 
+/* BURGER MENU */
 .menu-toggle {
   display: none;
   background: none;
@@ -241,7 +242,9 @@ footer {
   margin: 0 auto;
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
+
   header h1 {
     font-size: 34px;
   }
@@ -270,7 +273,6 @@ footer {
   }
 
   .navbar {
-    display: block;
     text-align: center;
   }
 
@@ -297,15 +299,12 @@ footer {
 
   .card {
     padding: 18px;
-    margin-bottom: 16px;
   }
 
   .button,
   .link-button,
   button {
-    display: block;
     width: 100%;
-    box-sizing: border-box;
     text-align: center;
   }
 
