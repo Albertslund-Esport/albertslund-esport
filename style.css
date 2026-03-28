@@ -500,3 +500,47 @@ footer {
     font-size: 16px;
   }
 }
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 2px solid #22c55e;
+  color: white;
+  font-size: 24px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 10px 0;
+  }
+}
