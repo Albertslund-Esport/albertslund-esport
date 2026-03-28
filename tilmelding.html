@@ -6,36 +6,41 @@
   <title>Tilmelding - Albertslund Esport</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  <div class="header-inner">
-    <img src="logo.png" alt="Albertslund Esport logo" class="logo">
-    <div class="header-text">
-      <h1>Albertslund Esport</h1>
-      <p>Tilmelding</p>
-    </div>
-  </div>
+  <img src="logo.png" alt="Albertslund Esport logo" style="max-width: 120px;">
+  <h1>Albertslund Esport</h1>
+  <p>Tilmelding</p>
 </header>
 
 <nav class="navbar">
-  <a href="index.html">Forside</a>
-  <a href="hold.html">Hold</a>
-  <a href="vision.html">Vision</a>
-  <a href="tilmelding.html" class="active">Tilmelding</a>
-  <a href="omos.html">Om os</a>
+  <button class="menu-toggle">☰</button>
+
+  <div class="nav-links">
+    <a href="index.html">Forside</a>
+    <a href="hold.html">Hold</a>
+    <a href="vision.html">Vision</a>
+    <a href="tilmelding.html" class="active">Tilmelding</a>
+    <a href="omos.html">Om os</a>
+  </div>
 </nav>
 
 <main>
+
   <section class="hero">
-    <h2>Tilmeld dig Albertslund Esport</h2>
-    <p>Udfyld formularen herunder, så vender vi tilbage hurtigst muligt.</p>
+    <h2>Tilmeld dig Albertslund Esport 🎮</h2>
+    <p>
+      Udfyld formularen herunder og få en gratis prøvetræning.
+    </p>
   </section>
 
   <section class="card">
+
     <form action="https://formspree.io/f/mqegebaq" method="post">
+
       <input type="hidden" name="_subject" value="Ny tilmelding fra Albertslund Esport">
-      <input type="hidden" name="_next" value="https://albertslund-esport.github.io/albertslund-esport/tak.html">
 
       <label for="navn">Fulde navn</label>
       <input type="text" id="navn" name="navn" required>
@@ -49,24 +54,45 @@
       <label for="telefon">Telefon</label>
       <input type="text" id="telefon" name="telefon">
 
-      <label for="spil">Ønsket hold / spil</label>
+      <label for="spil">Ønsket hold</label>
       <select id="spil" name="spil">
-        <option>Fortnite</option>
         <option>CS2</option>
+        <option>Fortnite</option>
         <option>Begynderhold</option>
       </select>
 
       <label for="besked">Ekstra besked</label>
-      <textarea id="besked" name="besked" rows="5"></textarea>
+      <textarea id="besked" name="besked"></textarea>
 
       <button type="submit">Send tilmelding</button>
+
     </form>
+
   </section>
+
+  <section class="card">
+    <h3>Info</h3>
+    <p>✔ Gratis prøvetræning</p>
+    <p>✔ 100% online træning</p>
+    <p>✔ Du kan starte når som helst</p>
+    <p>✔ Kontingent: 199 kr / måned</p>
+  </section>
+
 </main>
 
 <footer>
   <p>© Albertslund Esport</p>
 </footer>
+
+<!-- MENU SCRIPT -->
+<script>
+  const toggleButton = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggleButton.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
 
 </body>
 </html>
