@@ -54,3 +54,33 @@ footer {
   margin-top: 40px;
   color: #cbd5e1;
 }
+
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  margin-top: 20px;
+  background: #22c55e;
+  color: black;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
