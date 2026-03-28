@@ -324,4 +324,8 @@ footer {
     font-size: 16px;
     max-width: stretch;
   }
+
+  .form-container{
+    max-width: 100%;
+  }
 }
