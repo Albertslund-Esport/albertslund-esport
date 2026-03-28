@@ -6,24 +6,25 @@
   <title>Om os - Albertslund Esport</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  <div class="header-inner">
-    <img src="logo.png" alt="Albertslund Esport logo" class="logo">
-    <div class="header-text">
-      <h1>Albertslund Esport</h1>
-      <p>Om os</p>
-    </div>
-  </div>
+  <img src="logo.png" alt="Albertslund Esport logo" style="max-width: 120px;">
+  <h1>Albertslund Esport</h1>
+  <p>Om os</p>
 </header>
 
 <nav class="navbar">
-  <a href="index.html">Forside</a>
-  <a href="hold.html">Hold</a>
-  <a href="vision.html">Vision</a>
-  <a href="tilmelding.html">Tilmelding</a>
-  <a href="omos.html" class="active">Om os</a>
+  <button class="menu-toggle">☰</button>
+
+  <div class="nav-links">
+    <a href="index.html">Forside</a>
+    <a href="hold.html">Hold</a>
+    <a href="vision.html">Vision</a>
+    <a href="tilmelding.html">Tilmelding</a>
+    <a href="omos.html" class="active">Om os</a>
+  </div>
 </nav>
 
 <main>
@@ -31,51 +32,48 @@
   <section class="hero">
     <h2>Hvem er vi?</h2>
     <p>
-      Albertslund Esport er en forening med fokus på fællesskab,
-      udvikling, trivsel og ansvarlig gaming for børn og unge.
+      Albertslund Esport er en online esportsforening med fokus på fællesskab,
+      udvikling og ansvarlig gaming for unge spillere.
     </p>
   </section>
 
   <section class="card">
     <h3>Vores mål</h3>
     <p>
-      Vi vil skabe et trygt og inkluderende miljø, hvor medlemmer kan
-      udvikle sig både socialt og spillemæssigt.
+      Vi vil skabe et trygt og inkluderende miljø, hvor medlemmer kan udvikle sig
+      både som spillere og som en del af et stærkt fællesskab.
     </p>
   </section>
 
   <section class="card">
-    <h3>Foreningen</h3>
+    <h3>Hvordan fungerer det?</h3>
     <p>
-      Vi arbejder for at gøre esport til en positiv aktivitet, hvor
-      samarbejde, respekt og fællesskab er lige så vigtigt som resultater i spillet.
+      Al træning foregår online. Det betyder, at du kan deltage hjemmefra,
+      så længe du har dit eget udstyr og en stabil internetforbindelse.
     </p>
   </section>
 
   <section class="card">
     <h3>Kontakt</h3>
+    <p><strong>Email:</strong> albertslundesport@gmail.com</p>
+    <p><strong>Telefon:</strong> 42737403</p>
+    <p><strong>Kontaktperson:</strong> Usama Khalid Mir</p>
+    <p><strong>Lokation:</strong> Online træning</p>
+  </section>
 
-    <p><strong>Email:</strong> kontakt@albertslundesport.dk</p>
-    <p><strong>Adresse:</strong> Skriv jeres adresse her</p>
-
-    <p>Join vores Discord for nyheder, events og fællesskab:</p>
-
-    <a href="https://discord.gg/j8yyB9Amp" class="link-button" target="_blank">
-      Join vores Discord
-    </a>
-
+  <section class="card">
+    <h3>Discord</h3>
+    <p>Join vores Discord for nyheder, fællesskab og kontakt med andre medlemmer.</p>
+    <a href="https://discord.gg/j8yyB9Amp" class="link-button" target="_blank">Join vores Discord</a>
   </section>
 
   <section class="card">
     <h3>Bliv en del af fællesskabet</h3>
     <p>
-      Har du lyst til at prøve esport i et trygt miljø med andre børn og unge,
-      så er du altid velkommen til at kontakte os eller sende en tilmelding.
+      Du er altid velkommen til at starte med en gratis prøvetræning og se,
+      om Albertslund Esport er noget for dig.
     </p>
-
-    <a href="tilmelding.html" class="button">
-      Gå til tilmelding
-    </a>
+    <a href="tilmelding.html" class="button">Gå til tilmelding</a>
   </section>
 
 </main>
@@ -83,6 +81,16 @@
 <footer>
   <p>© Albertslund Esport</p>
 </footer>
+
+<!-- MENU SCRIPT -->
+<script>
+  const toggleButton = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggleButton.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
 
 </body>
 </html>
