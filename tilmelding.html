@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tilmelding - Albertslund Esport</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
 </head>
 
 <body>
@@ -31,16 +32,18 @@
 
   <section class="hero">
     <h2>Tilmeld dig Albertslund Esport 🎮</h2>
-    <p>
-      Udfyld formularen herunder og få en gratis prøvetræning.
-    </p>
+    <p>Udfyld formularen og få en gratis prøvetræning</p>
   </section>
 
   <section class="card">
 
-    <form action="https://formspree.io/f/mqegebaq" method="post">
+    <form action="https://formspree.io/f/mqegebaq" method="POST">
 
+      <!-- EMAIL SUBJECT -->
       <input type="hidden" name="_subject" value="Ny tilmelding fra Albertslund Esport">
+
+      <!-- VIGTIG: TAK SIDE (MIDLERIDTIG LINK) -->
+      <input type="hidden" name="_next" value="https://albertslund-esport.github.io/albertslund-esport/tak.html">
 
       <label for="navn">Fulde navn</label>
       <input type="text" id="navn" name="navn" required>
@@ -74,7 +77,7 @@
     <h3>Info</h3>
     <p>✔ Gratis prøvetræning</p>
     <p>✔ 100% online træning</p>
-    <p>✔ Du kan starte når som helst</p>
+    <p>✔ Start når du vil</p>
     <p>✔ Kontingent: 199 kr / måned</p>
   </section>
 
@@ -84,7 +87,6 @@
   <p>© Albertslund Esport</p>
 </footer>
 
-<!-- MENU SCRIPT -->
 <script>
   const toggleButton = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
