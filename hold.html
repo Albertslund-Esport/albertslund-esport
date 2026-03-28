@@ -6,57 +6,81 @@
   <title>Hold - Albertslund Esport</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  <div class="header-inner">
-    <img src="logo.png" alt="Albertslund Esport logo" class="logo">
-    <div class="header-text">
-      <h1>Albertslund Esport</h1>
-      <p>Vores hold</p>
-    </div>
-  </div>
+  <img src="logo.png" alt="Albertslund Esport logo" style="max-width: 120px;">
+  <h1>Albertslund Esport</h1>
+  <p>Vores hold</p>
 </header>
 
 <nav class="navbar">
-  <a href="index.html">Forside</a>
-  <a href="hold.html" class="active">Hold</a>
-  <a href="vision.html">Vision</a>
-  <a href="tilmelding.html">Tilmelding</a>
-  <a href="omos.html">Om os</a>
+  <button class="menu-toggle">☰</button>
+
+  <div class="nav-links">
+    <a href="index.html">Forside</a>
+    <a href="hold.html" class="active">Hold</a>
+    <a href="vision.html">Vision</a>
+    <a href="tilmelding.html">Tilmelding</a>
+    <a href="omos.html">Om os</a>
+  </div>
 </nav>
 
 <main>
+
   <section class="hero">
     <h2>Vores hold 🎮</h2>
-    <p>Se hvilke hold vi tilbyder lige nu, og find det hold der passer bedst.</p>
+    <p>Her kan du se vores nuværende hold og træningstider</p>
   </section>
 
   <section class="card">
-    <h3>Fortnite hold</h3>
-    <p><strong>Alder:</strong> 10-14 år</p>
-    <p><strong>Træning:</strong> Tirsdag 17:00-19:00</p>
-    <p><strong>Beskrivelse:</strong> For spillere der vil udvikle sig, have det sjovt og være en del af et hold.</p>
+    <h3>Albertslund Esport Alpha CS2</h3>
+
+    <p><strong>Dag:</strong> Mandag</p>
+    <p><strong>Tid:</strong> 19:00 - 20:30</p>
+    <p><strong>Alder:</strong> 16-18 år</p>
+
+    <p>
+      Et seriøst hold med fokus på teamwork, kommunikation
+      og udvikling i Counter-Strike 2.
+    </p>
   </section>
 
   <section class="card">
-    <h3>CS2 hold</h3>
-    <p><strong>Alder:</strong> 13-17 år</p>
-    <p><strong>Træning:</strong> Torsdag 18:00-20:00</p>
-    <p><strong>Beskrivelse:</strong> Fokus på samarbejde, kommunikation og spilforståelse.</p>
+    <h3>Online træning</h3>
+
+    <p>
+      Al træning foregår online, så du kan deltage hjemmefra.
+      Du skal have eget setup (PC, headset og internet).
+    </p>
   </section>
 
   <section class="card">
-    <h3>Begynderhold</h3>
-    <p><strong>Alder:</strong> Nye spillere</p>
-    <p><strong>Træning:</strong> Efter aftale</p>
-    <p><strong>Beskrivelse:</strong> Perfekt for nye medlemmer der gerne vil starte i et trygt miljø.</p>
+    <h3>Gratis prøvetræning</h3>
+
+    <p>
+      Du kan altid prøve en træning gratis, før du beslutter dig.
+    </p>
+
+    <a href="tilmelding.html" class="button">Tilmeld dig</a>
   </section>
+
 </main>
 
 <footer>
   <p>© Albertslund Esport</p>
 </footer>
+
+<!-- MENU SCRIPT -->
+<script>
+  const toggleButton = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggleButton.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
 
 </body>
 </html>
