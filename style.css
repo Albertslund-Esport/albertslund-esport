@@ -232,3 +232,40 @@ footer {
     width: 100px;
   }
 }
+.navbar {
+  background: #1f2937;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  border-top: 2px solid #22c55e;
+}
+
+.navbar a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* Hover effekt */
+.navbar a:hover {
+  color: #22c55e;
+}
+
+/* Underline animation */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #22c55e;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
