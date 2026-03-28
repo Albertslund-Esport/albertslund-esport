@@ -5,38 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tak - Albertslund Esport</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
 </head>
+
 <body>
 
 <header>
-  <div class="header-inner">
-    <img src="logo.png" alt="Albertslund Esport logo" class="logo">
-    <div class="header-text">
-      <h1>Albertslund Esport</h1>
-      <p>Tak for din tilmelding</p>
-    </div>
-  </div>
+  <img src="logo.png" alt="Albertslund Esport logo" style="max-width: 120px;">
+  <h1>Albertslund Esport</h1>
+  <p>Tak for din tilmelding</p>
 </header>
 
 <nav class="navbar">
-  <a href="index.html">Forside</a>
-  <a href="hold.html">Hold</a>
-  <a href="vision.html">Vision</a>
-  <a href="tilmelding.html">Tilmelding</a>
-  <a href="omos.html">Om os</a>
+  <button class="menu-toggle">☰</button>
+
+  <div class="nav-links">
+    <a href="index.html">Forside</a>
+    <a href="hold.html">Hold</a>
+    <a href="vision.html">Vision</a>
+    <a href="tilmelding.html">Tilmelding</a>
+    <a href="omos.html">Om os</a>
+  </div>
 </nav>
 
 <main>
+
   <section class="hero">
     <h2>Tak for din tilmelding! 🎉</h2>
-    <p>Vi har modtaget din besked og vender tilbage hurtigst muligt.</p>
+    <p>
+      Vi har modtaget din besked og vender tilbage hurtigst muligt.
+    </p>
     <a href="index.html" class="button">Tilbage til forsiden</a>
   </section>
+
+  <section class="card">
+    <h3>Hvad sker der nu?</h3>
+    <p>✔ Vi gennemgår din tilmelding</p>
+    <p>✔ Vi kontakter dig på mail eller telefon</p>
+    <p>✔ Du kan starte med en gratis prøvetræning</p>
+  </section>
+
+  <section class="card">
+    <h3>Imens kan du</h3>
+    <p>Join vores Discord og blive en del af fællesskabet allerede nu.</p>
+    <a href="https://discord.gg/j8yyB9Amp" class="link-button" target="_blank">Join vores Discord</a>
+  </section>
+
 </main>
 
 <footer>
   <p>© Albertslund Esport</p>
 </footer>
+
+<script>
+  const toggleButton = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggleButton.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
 
 </body>
 </html>
