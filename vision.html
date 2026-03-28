@@ -6,60 +6,84 @@
   <title>Vision - Albertslund Esport</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  <div class="header-inner">
-    <img src="logo.png" alt="Albertslund Esport logo" class="logo">
-    <div class="header-text">
-      <h1>Albertslund Esport</h1>
-      <p>Vision og formål</p>
-    </div>
-  </div>
+  <img src="logo.png" alt="Albertslund Esport logo" style="max-width: 120px;">
+  <h1>Albertslund Esport</h1>
+  <p>Vision og formål</p>
 </header>
 
 <nav class="navbar">
-  <a href="index.html">Forside</a>
-  <a href="hold.html">Hold</a>
-  <a href="vision.html" class="active">Vision</a>
-  <a href="tilmelding.html">Tilmelding</a>
-  <a href="omos.html">Om os</a>
+  <button class="menu-toggle">☰</button>
+
+  <div class="nav-links">
+    <a href="index.html">Forside</a>
+    <a href="hold.html">Hold</a>
+    <a href="vision.html" class="active">Vision</a>
+    <a href="tilmelding.html">Tilmelding</a>
+    <a href="omos.html">Om os</a>
+  </div>
 </nav>
 
 <main>
+
   <section class="hero">
     <h2>Vores vision</h2>
-    <p>Vi vil skabe et trygt, sjovt og udviklende esportsmiljø for børn og unge i Albertslund.</p>
+    <p>
+      Albertslund Esport vil skabe et trygt og inkluderende online fællesskab,
+      hvor unge spillere kan udvikle sig både menneskeligt og spillemæssigt.
+    </p>
   </section>
 
   <section class="card">
     <h3>Fællesskab</h3>
     <p>
-      Vi tror på, at esport kan samle børn og unge om noget positivt,
-      hvor samarbejde, respekt og sociale relationer er en vigtig del af oplevelsen.
+      Vi tror på, at esport er mere end bare spil. Det handler også om at høre til,
+      samarbejde og bygge gode relationer med andre.
     </p>
   </section>
 
   <section class="card">
     <h3>Udvikling</h3>
     <p>
-      Vores mål er at hjælpe medlemmer med at udvikle sig både som spillere og som mennesker.
-      Det handler ikke kun om at blive bedre i spillet, men også om ansvar og holdånd.
+      Vores mål er at hjælpe medlemmer med at blive bedre spillere,
+      men også bedre til kommunikation, ansvar og teamwork.
     </p>
   </section>
 
   <section class="card">
-    <h3>Tryghed</h3>
+    <h3>Tryghed og respekt</h3>
     <p>
-      Albertslund Esport skal være et sted, hvor alle føler sig velkomne,
-      og hvor der er plads til både nye og øvede spillere.
+      Albertslund Esport skal være et sted, hvor alle bliver mødt med respekt,
+      og hvor nye medlemmer kan starte i et trygt miljø.
     </p>
   </section>
+
+  <section class="card">
+    <h3>Online muligheder</h3>
+    <p>
+      Fordi vores træning foregår online, gør vi det nemt for medlemmer at deltage hjemmefra,
+      så flere kan være med uanset afstand.
+    </p>
+  </section>
+
 </main>
 
 <footer>
   <p>© Albertslund Esport</p>
 </footer>
+
+<!-- MENU SCRIPT -->
+<script>
+  const toggleButton = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggleButton.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
 
 </body>
 </html>
