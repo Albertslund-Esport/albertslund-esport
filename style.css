@@ -381,3 +381,51 @@ footer {
   transform: translateY(-2px);
   opacity: 0.92;
 }
+/* 📱 MOBIL DESIGN */
+@media (max-width: 768px) {
+
+  .header-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+
+  .header-text h1 {
+    font-size: 24px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 10px;
+  }
+
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .card {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .button,
+  .link-button {
+    width: 100%;
+    text-align: center;
+  }
+
+}
