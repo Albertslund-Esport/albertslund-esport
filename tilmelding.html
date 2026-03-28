@@ -6,15 +6,19 @@
   <title>Tilmelding - Albertslund Esport</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-  <h1>Albertslund Esport</h1>
-  <p>Tilmelding</p>
+  <div class="header-inner">
+    <img src="logo.png" alt="Albertslund Esport logo" class="logo">
+    <div class="header-text">
+      <h1>Albertslund Esport</h1>
+      <p>Tilmelding</p>
+    </div>
+  </div>
 </header>
 
-<nav>
+<nav class="navbar">
   <a href="index.html">Forside</a>
   <a href="hold.html">Hold</a>
   <a href="vision.html">Vision</a>
@@ -22,12 +26,16 @@
 </nav>
 
 <main>
-  <div class="card">
-    <h2>Tilmeld dig</h2>
+  <section class="hero">
+    <h2>Tilmeld dig Albertslund Esport</h2>
+    <p>Udfyld formularen herunder, så vender vi tilbage hurtigst muligt.</p>
+  </section>
+
+  <section class="card">
     <form action="https://formspree.io/f/mqegebaq" method="post">
       <input type="hidden" name="_subject" value="Ny tilmelding fra Albertslund Esport">
       <input type="hidden" name="_next" value="https://albertslund-esport.github.io/albertslund-esport/tak.html">
-      
+
       <label for="navn">Fulde navn</label>
       <input type="text" id="navn" name="navn" required>
 
@@ -52,7 +60,7 @@
 
       <button type="submit">Send tilmelding</button>
     </form>
-  </div>
+  </section>
 </main>
 
 <footer>
