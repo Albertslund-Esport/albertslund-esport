@@ -27,6 +27,17 @@ header p {
   font-size: 18px;
 }
 
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header-text {
+  text-align: left;
+}
+
 /* LOGO */
 .logo {
   width: 120px;
