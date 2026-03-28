@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tilmelding - Albertslund Esport</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Albertslund Esport</h1>
+  <p>Tilmelding</p>
+</header>
+
+<nav>
+  <a href="index.html">Forside</a>
+  <a href="hold.html">Hold</a>
+  <a href="vision.html">Vision</a>
+  <a href="tilmelding.html">Tilmelding</a>
+</nav>
+
+<main>
+  <div class="card">
+    <h2>Tilmeld dig</h2>
+    <form action="HER-SKAL-DIT-FORMSPREE-LINK-STÅ" method="POST">
+      
+      <label for="navn">Fulde navn</label>
+      <input type="text" id="navn" name="navn" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="alder">Alder</label>
+      <input type="number" id="alder" name="alder" required>
+
+      <label for="telefon">Telefon</label>
+      <input type="text" id="telefon" name="telefon">
+
+      <label for="spil">Ønsket hold / spil</label>
+      <select id="spil" name="spil">
+        <option>Fortnite</option>
+        <option>CS2</option>
+        <option>Begynderhold</option>
+      </select>
+
+      <label for="besked">Ekstra besked</label>
+      <textarea id="besked" name="besked" rows="5"></textarea>
+
+      <button type="submit">Send tilmelding</button>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <p>© Albertslund Esport</p>
+</footer>
+
+</body>
+</html>
