@@ -6,20 +6,17 @@
   <title>Albertslund Esport</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  <div class="header-inner">
-    <img src="logo.png" alt="Albertslund Esport logo" class="logo">
-    <div class="header-text">
-      <h1>Albertslund Esport</h1>
-      <p>Fællesskab, udvikling og gaming</p>
-    </div>
-  </div>
+  <img src="logo.png" alt="Albertslund Esport logo" style="max-width: 120px;">
+  <h1>Albertslund Esport</h1>
+  <p>Fællesskab, udvikling og gaming</p>
 </header>
 
 <nav class="navbar">
-  <button class="menu-toggle" aria-label="Åbn menu">☰</button>
+  <button class="menu-toggle">☰</button>
 
   <div class="nav-links">
     <a href="index.html" class="active">Forside</a>
@@ -32,68 +29,29 @@
 
 <main>
 
-  <!-- HERO -->
   <section class="hero">
     <h2>Velkommen til Albertslund Esport 🎮</h2>
     <p>
-      Et online fællesskab for unge spillere med fokus på udvikling,
-      trivsel og teamwork.
+      Et fællesskab for børn og unge med fokus på gaming,
+      udvikling, trivsel og holdånd.
     </p>
-    <a href="tilmelding.html" class="button">Tilmeld dig gratis prøvetræning</a>
+    <a href="tilmelding.html" class="button">Tilmeld dig her</a>
   </section>
 
-  <!-- HOLD -->
   <section class="card">
-    <h2>Vores hold</h2>
-
-    <p><strong>Albertslund Esport Alpha CS2</strong></p>
-    <p><strong>Dag:</strong> Mandag</p>
-    <p><strong>Tid:</strong> 19:00 - 20:30</p>
-    <p><strong>Alder:</strong> 16-18 år</p>
-
+    <h2>Hvad tilbyder vi?</h2>
+    <p>
+      Vi tilbyder et trygt og sjovt esportsmiljø,
+      hvor medlemmer kan udvikle sig både socialt og spillemæssigt.
+    </p>
   </section>
 
-  <!-- TRÆNING -->
   <section class="card">
-    <h2>Sådan fungerer det</h2>
-
-    <p>✔ Træning foregår 100% online</p>
-    <p>✔ Du kan starte når som helst</p>
-    <p>✔ Gratis prøvetræning første gang</p>
-    <p>✔ Du skal have eget setup hjemme</p>
-
-  </section>
-
-  <!-- PRIS -->
-  <section class="card">
-    <h2>Kontingent</h2>
-
-    <p><strong>199 kr / måned</strong></p>
-    <p>Ingen binding – du kan starte når du vil</p>
-
-    <a href="tilmelding.html" class="button">Bliv medlem</a>
-  </section>
-
-  <!-- DISCORD -->
-  <section class="card">
-    <h2>Fællesskab & Discord</h2>
-
-    <p>Join vores Discord og bliv en del af fællesskabet:</p>
-
-    <a href="https://discord.gg/j8yyB9Amp" class="link-button" target="_blank">
-      Join Discord
-    </a>
-  </section>
-
-  <!-- KONTAKT -->
-  <section class="card">
-    <h2>Kontakt</h2>
-
-    <p><strong>Email:</strong> albertslundesport@gmail.com</p>
-    <p><strong>Telefon:</strong> 42737403</p>
-    <p><strong>Kontaktperson:</strong> Usama Khalid Mir</p>
-    <p><strong>Lokation:</strong> Online træning</p>
-
+    <h2>For medlemmer og forældre</h2>
+    <p>
+      Albertslund Esport handler ikke kun om at spille.
+      Det handler også om fællesskab, ansvar og gode oplevelser.
+    </p>
   </section>
 
 </main>
@@ -101,6 +59,16 @@
 <footer>
   <p>© Albertslund Esport</p>
 </footer>
+
+<!-- MENU SCRIPT -->
+<script>
+  const toggleButton = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggleButton.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
 
 </body>
 </html>
